@@ -153,6 +153,8 @@ module.exports = function(grunt) {
     mocha: {
       test: {
         options: {
+          growlOnFail: false,
+          growlOnSuccess: false,
           urls: '<%= env.coverage.urls %>',
           log: true
         }
