@@ -23,13 +23,13 @@ describe('testXhrType', function() {
     XMLHttpRequest = undefined;
 
     req(['testXhrType'], function(testXhrType) {
-      expect(testXhrType('json')).to.equal(false);
+      expect(testXhrType('json')).to.be.equal(false);
       XMLHttpRequest = originalXhr;
       done();
     });
   });
 
-  // TODO add more tests once sinon's XHR2 features land
+  // TODO :: add more tests once sinon's XHR2 features land
   // http://git.io/AemZ
 
   afterEach(function() {
